@@ -1,0 +1,11 @@
+
+-- script para rodar no mysql phpmyadmin
+CREATE DATABASE IF NOT EXISTS `nodereactiftm` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `nodereactiftm`;
+
+CREATE TABLE IF NOT EXISTS `usuarios` (
+  `username` varchar(50) NOT NULL,
+  `password` int (255) NOT NULL
+) ENGINE=InnoDB CHARSET=utf8;
+
+INSERT INTO `usuarios` ( `username`, `password`) VALUES ('teste@teste.com', 123);
